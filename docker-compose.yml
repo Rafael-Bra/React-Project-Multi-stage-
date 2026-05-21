@@ -1,0 +1,19 @@
+name: meu-projeto
+
+services: 
+  frontend:
+    build: .
+    ports: 
+      - 8080:80
+      
+  
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "1q2w3e4r5t@"
+      MYSQL_DATABASE: "teste"
+      MYSQL_USER: "teste"
+      MYSQL_PASSWORD: "teste"
+    ports: 
+      - 3306:3306
+      
